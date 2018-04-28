@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: be90a17403515384b83ebf289c474166
+timeCreated: 1524932225
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: BodyArmature
+    100002: Head
+    100004: LeftArmFore
+    100006: LeftArmUpper
+    100008: LeftFoot
+    100010: LeftHandAttach
+    100012: LeftHip
+    100014: LeftLegLower
+    100016: LeftLegPeg
+    100018: LeftLegUpper
+    100020: LeftShoulder
+    100022: Lower_Spine
+    100024: Neck
+    100026: RightArmFore
+    100028: RightArmUpper
+    100030: RightFoot
+    100032: RightHandAttach
+    100034: RightHip
+    100036: RightLegLower
+    100038: RightLegPeg
+    100040: RightLegUpper
+    100042: RightShoulder
+    100044: Root
+    100046: Samus
+    100048: //RootNode
+    100050: Upper_Spine
+    400000: BodyArmature
+    400002: Head
+    400004: LeftArmFore
+    400006: LeftArmUpper
+    400008: LeftFoot
+    400010: LeftHandAttach
+    400012: LeftHip
+    400014: LeftLegLower
+    400016: LeftLegPeg
+    400018: LeftLegUpper
+    400020: LeftShoulder
+    400022: Lower_Spine
+    400024: Neck
+    400026: RightArmFore
+    400028: RightArmUpper
+    400030: RightFoot
+    400032: RightHandAttach
+    400034: RightHip
+    400036: RightLegLower
+    400038: RightLegPeg
+    400040: RightLegUpper
+    400042: RightShoulder
+    400044: Root
+    400046: Samus
+    400048: //RootNode
+    400050: Upper_Spine
+    2100000: Green
+    2100002: Dark
+    2100004: Orange
+    2100006: Yellow
+    2100008: Red
+    2100010: Skin_001
+    2100012: Blonde_001
+    2100014: Light
+    2100016: Face_001__face_png_001
+    2100018: Visor
+    4300000: Samus
+    7400000: aimdown
+    7400002: aimstraightdown
+    7400004: aimstraightup
+    7400006: aimup
+    7400008: crouching
+    7400010: fallingjump
+    7400012: idle
+    7400014: neutral
+    7400016: risingjump
+    7400018: run
+    7400020: shootrun
+    7400022: spinjump
+    7400024: standing
+    9500000: //RootNode
+    13700000: Samus
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
