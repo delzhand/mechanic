@@ -56,6 +56,16 @@ public class CameraFollow : MonoBehaviour
         focusPosition.y = Mathf.SmoothDamp(transform.position.y, focusPosition.y, ref smoothVelocityY, verticalSmoothTime);
         focusPosition += Vector2.right * currentLookAheadX;
         transform.position = (Vector3)focusPosition + Vector3.forward * -10;
+
+        // Constrain Camera to Room
+        float cameraSizeY = Camera.main.orthographicSize * 2;
+        float cameraSizeX = cameraSizeY * Screen.width / Screen.height;
+        Vector3 position = Camera.main.transform.position;
+        BoxCollider2D roomCollider = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCameraController>().RoomBoundary.GetComponent<BoxCollider2D>();
+        position.x = Mathf.Clamp(position.x, roomCollider.bounds.min.x + cameraSizeX / 2, roomCollider.bounds.max.x - cameraSizeX / 2);
+        position.y = Mathf.Clamp(position.y, roomCollider.bounds.min.y + cameraSizeY / 2, roomCollider.bounds.max.y - cameraSizeY / 2);
+        Camera.main.transform.position = position;
+
     }
 
     struct FocusArea

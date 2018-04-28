@@ -10,7 +10,7 @@ public class Room : MonoBehaviour {
 
     public void Regenerate()
     {
-        Tilemap tileMap = GetComponent<Tilemap>();
+        Tilemap tileMap = GetComponentInChildren<Tilemap>();
 
         // Delete all existing geometry
         tileMap.ClearAllTiles();
@@ -31,5 +31,8 @@ public class Room : MonoBehaviour {
             }
                 
         }
+
+        transform.GetComponent<BoxCollider2D>().size = new Vector2(width, height);
+        transform.GetComponent<BoxCollider2D>().offset = new Vector2(width / 2, height / 2);
     }
 }
