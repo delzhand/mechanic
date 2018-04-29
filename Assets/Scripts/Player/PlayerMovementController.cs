@@ -69,8 +69,22 @@ public class PlayerMovementController : PhysicsObject
             }
         }
 
-        //animator.SetBool("grounded", grounded);
-        //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        if (grounded && Mathf.Abs(move.x) > .01f)
+        {
+            animator.StartAnimation("run");
+        }
+        else if (!grounded && velocity.y < 0)
+        {
+            animator.StartAnimation("aimup");
+        }
+        else if (!grounded && velocity.y > 0)
+        {
+            animator.StartAnimation("aimup");
+        }
+        else
+        {
+            animator.StartAnimation("idle");
+        }
 
         targetVelocity = move * maxWalkSpeed;
     }

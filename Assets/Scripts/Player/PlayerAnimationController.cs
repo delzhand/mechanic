@@ -5,20 +5,21 @@ using UnityEngine;
 public class PlayerAnimationController : MonoBehaviour {
 
     [HideInInspector] public bool facingRight = true;
+    private Animator animator;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+    }
+
+    public void StartAnimation(string name)
+    {
+        animator.Play(name);
+    }
 
     public void Flip()
     {
+        transform.localRotation = Quaternion.Euler(new Vector3(0, 180, 0) + transform.localRotation.eulerAngles);
         facingRight = !facingRight;
-        transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 }
